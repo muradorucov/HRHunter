@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1140px;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+}
+
+
+
+body {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #888888;
+    margin-bottom: 50px;
+    line-height: 26px;
+
+}
+
+#static {
+    background: url("https://preview.colorlib.com/theme/sintec/img/background/bg1.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #202e31;
+    font-family: "Heebo", sans-serif;
+    margin-bottom: 22px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    &+p {
+        margin-bottom: 40px;
+    }
+}
+
+.number-wrapper {
+    display: flex;
+    gap: 30px;
+
+    div {
+
+
+        .number {
+            font-size: 27px;
+            color: #ec473a;
+            margin-bottom: 15px;
+        }
+
+    }
+}
+
+.col-5 {
+    width: calc(100%/12*5);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+img {
+    width: 368px;
+    height: 462px;
+    vertical-align: middle;
+}
