@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-color: #1a9ac9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.item {
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.item:nth-child(1) {
+    animation-name: anim1;
+}
+
+@keyframes anim1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(380px, 0);
+    }
+
+    100% {
+        transform: translate(380px, 214.75px);
+    }
+
+}
+
+.item:nth-child(2),
+.item:nth-child(9) {
+    animation-name: anim2;
+}
+
+@keyframes anim2 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-380px);
+    }
+}
+
+
+.item:nth-child(3),
+.item:nth-child(4) {
+    animation-name: anim3;
+}
+
+@keyframes anim3 {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(214.75px);
+    }
+}
+
+.item:nth-child(5) {
+    animation-name: anim4;
+}
+
+@keyframes anim4 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 214.75px);
+    }
+
+    100% {
+        transform: translate(380px, 214.75px);
+    }
+}
+
+.item:nth-child(6),
+.item:nth-child(7) {
+    animation-name: anim5;
+}
+
+@keyframes anim5 {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-214.75px);
+    }
+}
+
+.item:nth-child(8) {
+    animation-name: anim6;
+}
+
+@keyframes anim6 {
+    0% {
+        transform: translateY(0);
+    }
+
+    /* 
+    50% {
+        transform: translateY(-214.75px);
+    } */
+
+    100% {
+        transform: translateY(-428px);
+    }
+}
